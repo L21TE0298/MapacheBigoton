@@ -6,9 +6,9 @@ function Inicio() {
         <div className="App">
             <header className="App-header">
                 <div>
-                    <h1>Menu</h1>
+                    <h1>Bienvendo</h1>
                 </div>
-                <nav className="barra">
+                <nav className="barra">         
                     <a className="bo1" href="#">Sucursales</a>
                     <a className="bo1" href="#">contacto</a>
                 </nav>
@@ -20,13 +20,15 @@ function Inicio() {
                         <img className="logo" src={imagenes[4]} alt="as" />
                     </div>
                     <br></br>
-                    <a className="bo2" href="#">registrar cita</a>
-                    <br></br>
-                    <a className="bo2" href="#">Consultar citas</a>
-                    <br></br>
-                    <a className="bo2" href="#">Nuevo servicio</a>
-                    <br></br>
-                    <a className="bo2" href="#">Nuevo barbero</a>
+                    <nav className='apartados'>
+                        <a className="bo2" href="#">registrar cita</a>
+                        <br></br>
+                        <a className="bo2" href="#">Consultar citas</a>
+                        <br></br>
+                        <a className="bo2" href="#">Nuevo servicio</a>
+                        <br></br>
+                        <a className="bo2" href="#">Nuevo barbero</a>
+                    </nav>   
                 </div>
                 <div className="content">
                     <div className="content1">

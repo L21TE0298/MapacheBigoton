@@ -4,7 +4,7 @@ import imagenes from '../imagenes';
 
 
 function ConsultarCitas() {
-    
+
     const datos = [{
         id: 1,
         cliente: 'Juan Pérez',
@@ -22,27 +22,6 @@ function ConsultarCitas() {
         estado: 'Confirmada'
     },
         {
-            id: 1,
-            cliente: 'Juan Pérez',
-            fecha: '2023-11-25 10:00',
-            servicio: 'Corte de cabello',
-            barbero: 'Carlos',
-            estado: 'Confirmada'
-        }, {
-            id: 1,
-            cliente: 'Juan Pérez',
-            fecha: '2023-11-25 10:00',
-            servicio: 'Corte de cabello',
-            barbero: 'Carlos',
-            estado: 'Confirmada'
-        }, {
-            id: 1,
-            cliente: 'Juan Pérez',
-            fecha: '2023-11-25 10:00',
-            servicio: 'Corte de cabello',
-            barbero: 'Carlos',
-            estado: 'Confirmada'
-        }, {
             id: 1,
             cliente: 'Juan Pérez',
             fecha: '2023-11-25 10:00',
@@ -69,27 +48,60 @@ function ConsultarCitas() {
                         <img className="logo" src={imagenes[4]} alt="as" />
                     </div>
                     <br></br>
-                    <a className="bo2" href="#">registrar cita</a>
-                    <br></br>
-                    <a className="bo2" href="#">Consultar citas</a>
-                    <br></br>
-                    <a className="bo2" href="#">Nuevo servicio</a>
-                    <br></br>
-                    <a className="bo2" href="#">Nuevo barbero</a>
+                    <nav className='apartados'>
+                        <a className="bo2" href="#">registrar cita</a>
+                        <br></br>
+                        <a className="bo2" href="#">Consultar citas</a>
+                        <br></br>
+                        <a className="bo2" href="#">Nuevo servicio</a>
+                        <br></br>
+                        <a className="bo2" href="#">Nuevo barbero</a>
+                    </nav>
                 </div>
                 <div className="content">
                     <div className="content1">
                         <h2>Consulta de citas</h2>
                     </div>
                     <div className="botones">
-                        <a href="#"><button className="btn">exportar</button></a>
-                        <a href="#"><button className="btn">importar</button></a>
-                        <a href="#"><button className="btn">imprimir</button></a>
-                        <a href="#"><button className="btn">filtro</button></a>
-                        <a href="#"><button className="btn">inicio</button></a>
+                        <a href="#"><button className="btn"> <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                            <path d="M15 15h-6" />
+                            <path d="M11.5 17.5l-2.5 -2.5l2.5 -2.5" />
+                        </svg> exportar</button></a>
+                        <a href="#"><button className="btn"> <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3" />
+                        </svg> importar</button></a>
+                        <a href="#"><button className="btn"> <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2" />
+                            <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
+                            <path d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z" />
+                        </svg> imprimir</button></a>
+                        <a href="#"><button className="btn"> <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M4 6l8 0" />
+                            <path d="M16 6l4 0" />
+                            <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M4 12l2 0" />
+                            <path d="M10 12l10 0" />
+                            <path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M4 18l11 0" />
+                            <path d="M19 18l1 0" />
+                        </svg> filtro</button></a>
+                        <a href="#"><button className="btn"> <svg xmlns="http://www.w3.org/2000/svg" className="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                            <path d="M10 12h4v4h-4z" />
+                        </svg> inicio</button></a>
                     </div>
                     <div className='tabla'>
-                        <table className=''>
+                        <table className='tabla1'>
                             <thead>
                                 <tr>
                                     <th>Nombre</th>
