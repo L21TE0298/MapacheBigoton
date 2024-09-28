@@ -1,7 +1,7 @@
 :root {
     --naranja: #FCAA67;
     --rojo: #B0413E;
-    --cremita: #FFFFC7;
+    --crema: #fefecf;
     --azulito: #548687;
     --cafe: #473335;
     --negro: #000000;
@@ -9,7 +9,7 @@
 }
 
 .App-header {
-    background-color: var(--cremita);
+    background-color: var(--crema);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,16 +22,30 @@
     margin: .5rem;
 }
 
+.barra a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+
 .barra {
     display: flex;
     justify-content: flex-end;
+    margin: 1rem;
+}
+
+.bo1 {
+    margin: auto;
+    font-size: 1.5rem;
 }
 
 .bo1:hover {
     background-color: var(--naranja);
+    color: var(--blanco);
 }
-/**/
-main {
+
+*/ main {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -62,7 +76,7 @@ h2 {
 }
 
 .content {
-    background-image: url("/src/assets/imagenes/background.jpg");
+    background-image: url("/src/assets/imagenes/background.png");
     filter: brightness(0.9);
     width: max-content;
     width: 100%;
@@ -74,6 +88,17 @@ h2 {
     align-items: center;
     gap: 20px;
     justify-content: center;
+}
+
+.apartados a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+.bo2 {
+    color: var(--negro);
+    font-size: 1.5rem;
 }
 
 .bo2:hover {
