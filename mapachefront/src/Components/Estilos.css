@@ -1,10 +1,133 @@
+
 @font-face {
     font-family: Beardsons;
-    src: url(../Fonts/Beardsons\ -\ Normal.ttf) format("truetype");
+    src: url(./Fonts/Beardsons\ -\ Normal.ttf) format("truetype");
     font-style: normal;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100..900&display=swap');
+
+
+.advent-pro-uniquifier {
+  font-family: Advent Pro, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #629b9e;
+}
+
+.container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+    
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: Beardsons, sans-serif;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.barber-pole {
+    width: 250px;
+    height: auto;
+}
+
+.form-container {
+    background-color: #4d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 950px; 
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Advent Pro;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.input-group {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 800px;
+    font-family: Advent Pro;
+}
+
+
+select{
+    width: 102%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+.label{
+    padding: 10px;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 0;
+}
+
+.btn.register {
+    background-color: #c84141;
+}
+
+.btn.view {
+    background-color: #c84141;
+}
 
 p {
     margin-left: 20px;
@@ -17,8 +140,8 @@ body {
     background-color: #629b9e;
 }
 
-.bodyServicios {
-    background-image: url(../Images/background.jpg);
+div.Servicios {
+    background-image: url(./Images/background.jpg);
     background-size: cover;
 
 }
@@ -42,7 +165,7 @@ label {
 
 .headerServicios {
     background-color: #FFFFC7;
-    padding: 10px;
+    padding: 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,19 +173,39 @@ label {
     top: 0;
     width: 100%;
     z-index: 1000;
+    
+}
+.headerServicios h2{
+    color: #473335;
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 12px;
+    display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .headerServicios img {
     height: 50px;
 }
 
-.headerServicios nav a {
-    margin: 0 15px;
-    color: black;
-    text-decoration: none;
+.headerServicios nav {
+    margin: 0 25px;
     font-weight: bold;
 }
 
+.headerServicios nav a {
+    display: inline-block; /* Para que el rectángulo se ajuste al texto */
+    padding: 20px 20px; /* Tamaño del rectángulo alrededor del texto */
+    color: black; /* Color del texto por defecto */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    transition: all 0.3s ease; /* Transición suave al hacer hover */
+    text-align: center; /* Alinear texto en el centro */
+}
+
+.headerServicios nav a:hover {
+    background-color: white;   
+}
 
 #menu {
     width: 250px;
@@ -76,31 +219,42 @@ label {
 }
 
 #menu h2 {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
+    font-size: 50px;
 }
 
 #menu h2 img {
     margin-top: 20px;
     margin-right: 10px;
-    height: 30px;
+    height: 60px;
 }
 
 #menu ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
+    
 }
 
 #menu ul li {
-    margin: 20px 0;
+   
+    padding: 40px 0;
+    
+       
+}
+#menu ul li:hover {
+    background-color: #ffeb99;
+    
 }
 
 #menu ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
+    
 }
+
 
 #menu p {
     margin-top: 20px;
@@ -116,11 +270,23 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 90px;
     margin-bottom: 20px;
 }
 
 .logo-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.logo-container2 img {
     width: 100px;
     height: auto;
     margin-right: 20px;
@@ -212,18 +378,7 @@ h2.NewService {
     color: black;
 }
 
-.form-containerServicios .cancelServicios {
-    background-color: #b0413e;
-    color: white;
-}
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 20px;
-    width: 100%;
-}
 
 .btnServicios {
     padding: 10px 20px;
@@ -236,13 +391,10 @@ h2.NewService {
 
 .btnServicios.registerServicios {
     background-color: #FFFFC7;
-    border-radius: 50px;
+  
 }
 
-.btnServicios.cancelServicios {
-    background-color: #b0413e;
-    border-radius: 50px;
-}
+
 
 .form-section {
     background-color: white;

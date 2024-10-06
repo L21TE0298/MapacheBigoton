@@ -1,60 +1,76 @@
-import '../App.css'
+import './Estilos.css';
+import barberPoleReverse from './Images/Palo de barberia al reves.png';
+import barberPole from './Images/Palo de barberia.png';
+import logoImage from './Images/logoCompleto-removebg-preview.png';
 
 export default function RegistrarCita() {
     return (
         <div>
-            <div class="container">
-                <div class="header">
-
-                    <h1>El mapache bigoton</h1>
+            <div className="container">
+                <div className="header">
+                    <div className="logo-container">
+                        <img src={logoImage} alt="Logo Mapache Bigotón" className="logo" />
+                        <h1>El Mapache Bigoton</h1>
+                    </div>
                 </div>
 
-                <div class="form-wrapper">
-                    <img src="./Images/Palo de barberia al reves.png" alt="Palo de barberia" class="barber-pole"/>
+                <div className="form-wrapper">
+                    <img src={barberPoleReverse} alt="Palo de barberia" className="barber-pole" />
 
-                        <div class="form-container">
-                            <h2>REGISTRAR CITA</h2>
-                            <form>
-                                <div class="input-group">
-                                    <label for="barbero">Barbero:</label>
-                                    <input type="text" id="barbero" placeholder="Barbero"/>
-                                </div>
-                                <div class="input-group">
-                                    <label for="cliente">Cliente:</label>
-                                    <input type="text" id="cliente" placeholder="Cliente"/>
-                                </div>
-                                <div class="input-group">
-                                    <label for="numero-cliente">Número del cliente:</label>
-                                    <input type="text" id="numero-cliente" placeholder="Número del cliente"/>
-                                </div>
-                                <div class="input-group">
-                                    <label for="servicio">Servicio:</label>
-                                    <input type="text" id="servicio" placeholder="Servicio"/>
-                                </div>
-                                <div class="input-group">
-                                    <label for="costo">Costo:</label>
-                                    <input type="text" id="costo" placeholder="Costo"/>
-                                </div>
-                                <div class="input-group">
-                                    <label for="fecha">Fecha de la cita:</label>
-                                    <input type="date" id="fecha"/>
-                                </div>
-                                <div class="input-group">
-                                    <label for="hora">Hora de la cita:</label>
-                                    <input type="time" id="hora"/>
-                                </div>
-                                <div class="buttons">
-                                    <button type="submit" class="btn register">Registrar cita</button>
-                                    <button type="button" class="btn view">Ver citas</button>
-                                </div>
-                            </form>
-                        </div>
+                    <div className="form-container">
+                        <h2>REGISTRAR CITA</h2>
+                        <form>
+                            <div className="input-group">
+                                <label htmlFor="sucursal">Sucursal</label>
+                                <select id="sucursal">
+                                    <option value="" disabled selected hidden>Selecciona una opción</option>
+                                    <option value="sucursal1">Sucursal 1</option>
+                                    <option value="sucursal2">Sucursal 2</option>
+                                    <option value="sucursal3">Sucursal 3</option>
+                                    <option value="sucursal4">Sucursal 4</option>
+                                </select>
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="barbero">Barbero:</label>
+                                <select id="barbero">
+                                    <option value="" disabled selected hidden>Selecciona un barbero</option>
+                                </select>
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="cliente">Cliente:</label>
+                                <input type="text" id="cliente" placeholder="Cliente" />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="numero-cliente">Número del cliente:</label>
+                                <input type="text" id="numero-cliente" placeholder="Número del cliente" />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="servicio">Servicio:</label>
+                                <input type="text" id="servicio" placeholder="Servicio" />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="costo">Costo:</label>
+                                <input type="text" id="costo" placeholder="Costo" />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="fecha">Fecha de la cita:</label>
+                                <input type="date" id="fecha" />
+                            </div>
+                            <div className="input-group">
+                                <label htmlFor="hora">Hora de la cita:</label>
+                                <input type="time" id="hora" />
+                            </div>
+                            <div className="buttons">
+                                <button type="submit" className="btn register">Registrar cita</button>
+                                <button type="button" className="btn view">Ver citas</button>
+                                <button type="button" className="btn view">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
 
-                        <img src="./Images/Palo de barberia.png" alt="Barber Pole" class="barber-pole"/>
-
-                        </div>
+                    <img src={barberPole} alt="Barber Pole" className="barber-pole" />
                 </div>
             </div>
-
-            )
+        </div>
+    );
 }
