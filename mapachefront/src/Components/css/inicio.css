@@ -76,7 +76,7 @@ h2 {
 }
 
 .content {
-    background-image: url("/src/assets/imagenes/background.png");
+    background-image: url("/src/assets/imagenes/background.jpg");
     filter: brightness(0.9);
     width: max-content;
     width: 100%;

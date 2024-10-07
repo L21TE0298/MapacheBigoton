@@ -1,4 +1,4 @@
-import fondo1 from './assets/imagenes/background.png';
+import fondo1 from './assets/imagenes/background.jpg';
 import corte1 from './assets/imagenes/corte1.jpg';
 import corte2 from './assets/imagenes/corte2.jpeg';
 import corte3 from './assets/imagenes/corte3.jpeg';
