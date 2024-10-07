@@ -1,0 +1,88 @@
+:root {
+    --naranja: #FCAA67;
+    --rojo: #B0413E;
+    --cremita: #FFFFC7;
+    --azulito: #548687;
+    --cafe: #473335;
+    --negro: #000000;
+    --blanco: #ffffff;
+}
+/*
+.App-header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.App-header a {
+    color: var(--negro);
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.barra {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bo1:hover {
+    background-color: var(--naranja);
+}
+
+/*tablas*/
+table {
+    margin: 0 auto;
+        position: relative;
+        top: 100%;
+        transform: translateY(2%);
+        text-align: center;
+        border-collapse: collapse;
+        width: 80%;
+}
+
+th,
+td {
+    color: var(--blanco);
+    border: 1px solid #5d4e4e;
+    padding:1.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #070707;
+}
+
+tbody{
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+
+.btn {
+    background-color: var(--cremita);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+.apartados a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+.bo2 {
+    color: var(--negro);
+    font-size: 1.5rem;
+}
+
+.bo2:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
