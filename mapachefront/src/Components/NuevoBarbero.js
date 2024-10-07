@@ -42,7 +42,7 @@ function Barbero(){
                             <input className='datosBar' type='text' placeholder='Apellido materno' />
                             <input className='datosBar' type='text' placeholder='Nombre' />
                             <a href="/consultas"><button className="btn">Registrar Barbero</button></a>
-                            <a href="/consultas"><button className="btn1">Cancelar</button></a>
+                            <a href="/#"><button className="btn1">Cancelar</button></a>
                         </div>
                         <div className='content3'>
                             <img className="barber" src={imagenes[5]} alt="as" />
