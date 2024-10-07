@@ -21,13 +21,13 @@ function Inicio() {
                     </div>
                     <br></br>
                     <nav className='apartados'>
-                        <a className="bo2" href="#">registrar cita</a>
+                        <a className="bo2" href="/registrar">registrar cita</a>
                         <br></br>
-                        <a className="bo2" href="#">Consultar citas</a>
+                        <a className="bo2" href="/consultas">Consultar citas</a>
                         <br></br>
-                        <a className="bo2" href="#">Nuevo servicio</a>
+                        <a className="bo2" href="/servicio">Nuevo servicio</a>
                         <br></br>
-                        <a className="bo2" href="#">Nuevo barbero</a>
+                        <a className="bo2" href="/Barbero">Nuevo barbero</a>
                     </nav>   
                 </div>
                 <div className="content">
@@ -39,9 +39,9 @@ function Inicio() {
                     <img className="imgContent" src={imagenes[2]} alt="as" />
                     <img className="imgContent" src={imagenes[3]} alt="as" />
                     <br></br>
-                    <a href="#"><button className="btn">registrar citas</button></a>
+                    <a href="/registrar"><button className="btn">registrar citas</button></a>
                     <a href="/Barbero"><button className="btn">nuevo barbero</button></a>
-                    <a href="#"><button className="btn">nuevo servicio</button></a>
+                    <a href="/servicio"><button className="btn">nuevo servicio</button></a>
                     <a href="/consultas"><button className="btn">Consultar citas</button></a>
                 </div>
             </main>
