@@ -6,7 +6,7 @@ import java.sql.Time;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cita")
+//@Table(name = "cita")
 public class Cita {
     
     @Id

@@ -3,15 +3,17 @@ package com.mapachebigoton.mapacheapi.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "servicio")
+//@Table(name = "servicio")
 public class Servicio {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idServicio;
+    private Integer idServicio;
 
+    @Column(nullable = false, length = 100)
     private String descripcion;
 
+    @Column(nullable = false)
     private Double costo;
 
     public Servicio(String descripcion, Double costo) {
@@ -22,11 +24,11 @@ public class Servicio {
     public Servicio() {
     }
 
-    public Long getIdServicio() {
+    public Integer getIdServicio() {
         return idServicio;
     }
 
-    public void setIdServicio(Long idServicio) {
+    public void setIdServicio(Integer idServicio) {
         this.idServicio = idServicio;
     }
 
