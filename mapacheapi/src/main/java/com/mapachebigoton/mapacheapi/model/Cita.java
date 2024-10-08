@@ -11,7 +11,7 @@ public class Cita {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCita;
+    private Integer idCita;
 
     private Date fecha;
 
@@ -25,11 +25,11 @@ public class Cita {
     public Cita() {
     }
 
-    public Long getIdCita() {
+    public Integer getIdCita() {
         return idCita;
     }
 
-    public void setIdCita(Long idCita) {
+    public void setIdCita(Integer idCita) {
         this.idCita = idCita;
     }
 
